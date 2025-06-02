@@ -1,9 +1,7 @@
 //
 //  UserListUITestsLaunchTests.swift
 //  UserListUITests
-//
-//  Created by Chetan on 25/4/2025.
-//
+
 
 import XCTest
 

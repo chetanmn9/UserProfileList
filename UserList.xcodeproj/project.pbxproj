@@ -24,10 +24,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		612140DE2DBBA4C50011E651 /* UserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		612140EE2DBBA4C70011E651 /* UserListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		612140F82DBBA4C70011E651 /* UserListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		612140DE2DBBA4C50011E651 /* UserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = UserList.app; path = "/Users/chetan/Desktop/iOSPracticeProjects/GitHub/UserList/build/Debug-iphoneos/UserList.app"; sourceTree = "<absolute>"; };
+		612140EE2DBBA4C70011E651 /* UserListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UserListTests.xctest; path = "/Users/chetan/Desktop/iOSPracticeProjects/GitHub/UserList/build/Debug-iphoneos/UserList.app/PlugIns/UserListTests.xctest"; sourceTree = "<absolute>"; };
+		612140F82DBBA4C70011E651 /* UserListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = UserListUITests.xctest; path = "/Users/chetan/Desktop/iOSPracticeProjects/GitHub/UserList/build/Debug-iphoneos/UserListUITests-Runner.app/PlugIns/UserListUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		61F727AA2DBBD1DA00C73204 /* Exceptions for "UserListTests" folder in "UserList" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataLayerTests/UserListServiceTests.swift,
+				DomianLayerTests/UserListMapperTests.swift,
+				PresentationLayerTests/UserListViewModelTests.swift,
+			);
+			target = 612140DD2DBBA4C50011E651 /* UserList */;
+		};
+		61F727AB2DBBD1DA00C73204 /* Exceptions for "UserListTests" folder in "UserListTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataLayerTests/UserListServiceTests.swift,
+				DomianLayerTests/UserListMapperTests.swift,
+				PresentationLayerTests/UserListViewModelTests.swift,
+			);
+			target = 612140ED2DBBA4C70011E651 /* UserListTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		612140E02DBBA4C50011E651 /* UserList */ = {
@@ -35,14 +56,18 @@
 			path = UserList;
 			sourceTree = "<group>";
 		};
-		612140F12DBBA4C70011E651 /* UserListTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UserListTests;
-			sourceTree = "<group>";
-		};
 		612140FB2DBBA4C70011E651 /* UserListUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UserListUITests;
+			sourceTree = "<group>";
+		};
+		61F727A22DBBD0A400C73204 /* UserListTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				61F727AA2DBBD1DA00C73204 /* Exceptions for "UserListTests" folder in "UserList" target */,
+				61F727AB2DBBD1DA00C73204 /* Exceptions for "UserListTests" folder in "UserListTests" target */,
+			);
+			path = UserListTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,20 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				612140E02DBBA4C50011E651 /* UserList */,
-				612140F12DBBA4C70011E651 /* UserListTests */,
+				61F727A22DBBD0A400C73204 /* UserListTests */,
 				612140FB2DBBA4C70011E651 /* UserListUITests */,
-				612140DF2DBBA4C50011E651 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		612140DF2DBBA4C50011E651 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				612140DE2DBBA4C50011E651 /* UserList.app */,
-				612140EE2DBBA4C70011E651 /* UserListTests.xctest */,
-				612140F82DBBA4C70011E651 /* UserListUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +123,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				612140E02DBBA4C50011E651 /* UserList */,
+				61F727A22DBBD0A400C73204 /* UserListTests */,
 			);
 			name = UserList;
 			packageProductDependencies = (
@@ -129,9 +144,6 @@
 			);
 			dependencies = (
 				612140F02DBBA4C70011E651 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				612140F12DBBA4C70011E651 /* UserListTests */,
 			);
 			name = UserListTests;
 			packageProductDependencies = (
@@ -196,7 +208,7 @@
 			mainGroup = 612140D52DBBA4C50011E651;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 612140DF2DBBA4C50011E651 /* Products */;
+			productRefGroup = 612140D52DBBA4C50011E651;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -395,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UserList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UserList/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = K75257HU99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UserList/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UserList/Resource/Preview Content\"";
 				DEVELOPMENT_TEAM = K75257HU99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
